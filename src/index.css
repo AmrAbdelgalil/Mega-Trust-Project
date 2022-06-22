@@ -1,13 +1,220 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* 
+===========
+Global Style
+===========
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #764A82;
+  --secondry-color: #AC82B7
+  --background-color: #f6f1f7;
+  --text-color: #fff;
+}
+
+main{
+  background-color: #f6f1f7;
+  padding: 3rem;
+  width: 100%;
+  min-height: 100vh;
+ 
+}
+article{
+  background-color: #f6f1f7;
+  padding: 3rem;
+  width: 100%;
+  min-height: 100vh;
+ 
+}
+
+p {
+  margin: 10px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  max-width: 100px;
+  max-height: 100px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+
+button {
+  padding: 5px;
+  height: 30px;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+form {
+  margin: 0 auto;
+  padding: 2rem;
+  display: grid;
+  width: 70vh;
+  grid-template-columns: minmax(300px, 50vw);
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+label {
+  margin-left: 10px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+input{
+  margin: 5px 0;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f6f1f7;
+  padding: 10px;
+}
+
+input:focus{
+  outline:2px solid #764A82;
+}
+
+/* 
+===========
+Users Section
+===========
+*/
+
+.users {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 300px));
+  gap: 2rem;
+  place-content: center;
+}
+
+.users li {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  place-items: center;
+  text-align: center;
+  gap: 5px 0;
+}
+
+.btn-del{
+  background-color: rgb(255, 116, 116);
+  color: #fff;
+}
+
+.btn-edit{
+  background-color: rgb(139, 203, 139);
+  color: #fff;
+  margin-top: 10px;
+}
+
+/* 
+===========
+Form Section
+===========
+*/
+
+.form {
+  margin: 3rem 0 0;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.btn-add{
+  margin: 20px auto 5px;
+  width: 50%;
+  background-color: rgb(139, 203, 139);
+  color: #fff;
+}
+
+.edit-link{
+  text-decoration: none;
+  display: flex;
+  width:100%;
+  justify-content: center;
+}
+
+.edit-link button{
+  padding: 0;
+  margin: 0;
+}
+
+/* 
+===========
+Single User
+===========
+*/
+.single-user{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-user img{
+  border-radius: 50%;
+}
+
+.single-user h1{
+  font-size: 4rem;
+  margin-top: 2rem;
+}
+
+.user-card{
+margin: 0 auto;
+}
+.user-card img{
+  margin: 0 auto;
+}
+
+.edit-form{
+  margin: 0 auto;
+}
+
+.btn-back-home{
+  position: fixed;
+  top: 0;
+  left: 20%;
+  height: 50px;
+  margin-top: 20px;
+  
+}
+
+.btn-back-home button{
+  background-color: transparent;
+  text-decoration: underline;
+  color: blue;
 }
